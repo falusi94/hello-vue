@@ -2,18 +2,21 @@
   <div class="header">
     <div class="header-placeholder" />
     <div class="header-content">
-      <ButtonLink title="Home" @click="goHome" />
+      <TheHeaderButton
+        title="Home"
+        @click="goHome"
+      />
     </div>
   </div>
 </template>
 
 <script>
-import ButtonLink from './ButtonLink.vue';
+import TheHeaderButton from './TheHeaderButton.vue';
 
 export default {
   name: 'TheHeader',
   components: {
-    ButtonLink,
+    TheHeaderButton,
   },
   methods: {
     goHome() {
