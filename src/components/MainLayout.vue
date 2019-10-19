@@ -4,6 +4,7 @@
     <CenterContainer>
       <BeerList />
     </CenterContainer>
+    <Footer />
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 import Header from './Header.vue';
 import CenterContainer from './CenterContainer.vue';
 import BeerList from './BeerList.vue';
+import Footer from './Footer.vue';
 
 export default {
   name: 'MainLayout',
@@ -18,6 +20,7 @@ export default {
     Header,
     CenterContainer,
     BeerList,
+    Footer,
   },
 };
 </script>
