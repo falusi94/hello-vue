@@ -5,23 +5,45 @@
     </div>
 
     <div class="beer-description">
-      <div class="name">
+      <BaseLink
+        class="name"
+        @click="modalOpened = true">
         {{ beer.name }}
-      </div>
+      </BaseLink>
       <div class="tagline">
         {{ beer.tagline }}
       </div>
     </div>
+
+    <BaseModal
+      :title="beer.name"
+      :modalOpened="modalOpened"
+      @handleClose="modalOpened = false"
+    >
+      {{ beer.description }}
+    </BaseModal>
+
   </div>
 </template>
 
 <script>
+import BaseModal from './BaseModal.vue';
+import BaseLink from './BaseLink.vue';
+
 export default {
   name: 'BeerListItem',
   props: ['beer'],
+  data() {
+    return {
+      modalOpened: false,
+    };
+  },
+  components: {
+    BaseModal,
+    BaseLink,
+  },
 };
 </script>
-
 
 <style lang="scss" scoped>
   .beer {
