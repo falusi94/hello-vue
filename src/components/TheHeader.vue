@@ -11,7 +11,7 @@
 import ButtonLink from './ButtonLink.vue';
 
 export default {
-  name: 'Header',
+  name: 'TheHeader',
   components: {
     ButtonLink,
   },

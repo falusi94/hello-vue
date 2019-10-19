@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: 'BeerItem',
+  name: 'BeerListItem',
   props: ['beer'],
 };
 </script>

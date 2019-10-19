@@ -1,26 +1,26 @@
 <template>
   <div class="layout">
-    <Header />
+    <TheHeader />
     <CenterContainer>
       <BeerList />
     </CenterContainer>
-    <Footer />
+    <TheFooter />
   </div>
 </template>
 
 <script>
-import Header from './Header.vue';
+import TheHeader from './TheHeader.vue';
 import CenterContainer from './CenterContainer.vue';
 import BeerList from './BeerList.vue';
-import Footer from './Footer.vue';
+import TheFooter from './TheFooter.vue';
 
 export default {
   name: 'MainLayout',
   components: {
-    Header,
+    TheHeader,
     CenterContainer,
     BeerList,
-    Footer,
+    TheFooter,
   },
 };
 </script>

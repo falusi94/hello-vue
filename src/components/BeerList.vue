@@ -1,19 +1,19 @@
 <template>
   <ul class="beer-list">
     <li v-for="(beer) in beers" :key="beer.id">
-      <BeerItem :beer="beer"/>
+      <BeerListItem :beer="beer"/>
     </li>
   </ul>
 </template>
 
 <script>
 import axios from 'axios';
-import BeerItem from './BeerItem.vue';
+import BeerListItem from './BeerListItem.vue';
 
 export default {
   name: 'BeerList',
   components: {
-    BeerItem,
+    BeerListItem,
   },
   data() {
     return {
@@ -30,7 +30,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   .beer-list {
     list-style: none;
     padding: 0;
