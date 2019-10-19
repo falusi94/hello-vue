@@ -2,35 +2,22 @@
   <div class="layout">
     <Header />
     <CenterContainer>
-      <BeerItem v-for="(beer) in beers" :key="beer.id" :beer="beer"/>
+      <BeerList />
     </CenterContainer>
   </div>
 </template>
 
 <script>
-import axios from 'axios';
 import Header from './Header.vue';
 import CenterContainer from './CenterContainer.vue';
-import BeerItem from './BeerItem.vue';
+import BeerList from './BeerList.vue';
 
 export default {
   name: 'MainLayout',
   components: {
     Header,
     CenterContainer,
-    BeerItem,
-  },
-  data() {
-    return {
-      beers: null,
-    };
-  },
-  created() {
-    axios
-      .get('https://api.punkapi.com/v2/beers')
-      .then((response) => {
-        this.beers = response.data;
-      });
+    BeerList,
   },
 };
 </script>
