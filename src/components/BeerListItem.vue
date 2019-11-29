@@ -27,9 +27,6 @@
 </template>
 
 <script>
-import BaseModal from './BaseModal.vue';
-import BaseLink from './BaseLink.vue';
-
 export default {
   name: 'BeerListItem',
   props: ['beer'],
@@ -37,10 +34,6 @@ export default {
     return {
       modalOpened: false,
     };
-  },
-  components: {
-    BaseModal,
-    BaseLink,
   },
 };
 </script>

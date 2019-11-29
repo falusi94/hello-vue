@@ -7,13 +7,8 @@
 </template>
 
 <script>
-import BaseButton from './BaseButton.vue';
-
 export default {
   name: 'TheHeaderButton',
-  components: {
-    BaseButton,
-  },
   props: [
     'title',
   ],

@@ -20,13 +20,8 @@
 </template>
 
 <script>
-import BaseButton from './BaseButton.vue';
-
 export default {
   name: 'BaseModal',
-  components: {
-    BaseButton,
-  },
   props: [
     'title',
     'modalOpened',
