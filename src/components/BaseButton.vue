@@ -9,9 +9,9 @@
 <script>
 export default {
   name: 'BaseButton',
-  props: [
-    'title',
-  ],
+  props: {
+    title: String,
+  },
 };
 </script>
 

@@ -22,11 +22,11 @@
 <script>
 export default {
   name: 'BaseModal',
-  props: [
-    'title',
-    'modalOpened',
-    'handleClose',
-  ],
+  props: {
+    title: String,
+    modalOpened: Boolean,
+    handleClose: Function,
+  },
 };
 </script>
 

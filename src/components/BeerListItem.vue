@@ -29,7 +29,9 @@
 <script>
 export default {
   name: 'BeerListItem',
-  props: ['beer'],
+  props: {
+    beer: Object,
+  },
   data() {
     return {
       modalOpened: false,
