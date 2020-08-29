@@ -1,9 +1,11 @@
 <template>
-  <ul class="beer-list">
-    <li v-for="(beer) in beers" :key="beer.id">
-      <BeerListItem :beer="beer"/>
-    </li>
-  </ul>
+  <BaseSuspend :isLoading=(!beers)>
+    <ul class="beer-list">
+      <li v-for="(beer) in beers" :key="beer.id">
+        <BeerListItem :beer="beer"/>
+      </li>
+    </ul>
+  </BaseSuspend>
 </template>
 
 <script>
