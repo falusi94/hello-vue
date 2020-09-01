@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TheHeader.vue renders properly 1`] = `
+<div class="header">
+  <div class="header-placeholder"></div>
+  <div class="header-content">
+    <theheaderbutton-stub title="Home"></theheaderbutton-stub>
+  </div>
+</div>
+`;

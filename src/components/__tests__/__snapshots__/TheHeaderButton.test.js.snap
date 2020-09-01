@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TheHeaderButton.vue renders properly 1`] = `<basebutton class="header-button"></basebutton>`;
