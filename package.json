@@ -10,7 +10,7 @@
     "deploy": "ASSET_PATH=/hello-vue/ yarn build; push-dir --dir=dist --branch=gh-pages --cleanup --allow-unclean"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "core-js": "^3.1.2",
     "vue": "^2.6.10"
   },
